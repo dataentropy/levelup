@@ -1,5 +1,3 @@
-import fs from 'fs';
-
 import Products from './product'
 
 import { last } from '../../../lib/Fun'
