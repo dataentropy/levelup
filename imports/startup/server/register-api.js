@@ -11,7 +11,7 @@ import GoalsResolvers from '../../api/goals/resolvers';
 import ProductSchema from '../../api/product/Product.graphql';
 import ProductResolvers from '../../api/product/resolvers';
 
-//FUCFK
+//DSFSDF
 
 const typeDefs = [
   ResolutionsSchema,
