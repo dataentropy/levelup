@@ -8,19 +8,23 @@ import UsersSchema from '../../api/users/User.graphql';
 import UsersResolvers from '../../api/users/resolvers';
 import GoalsSchema from '../../api/goals/Goal.graphql';
 import GoalsResolvers from '../../api/goals/resolvers';
+import ProductSchema from '../../api/product/Product.graphql';
+import ProductResolvers from '../../api/product/resolvers';
 
-//okFword
+//FUCFK
 
 const typeDefs = [
   ResolutionsSchema,
   UsersSchema,
   GoalsSchema,
+  ProductSchema,
 ];
 
 const resolvers = merge(
   ResolutionsResolvers,
   UsersResolvers,
   GoalsResolvers,
+  ProductResolvers
 );
 
 const schema = makeExecutableSchema({

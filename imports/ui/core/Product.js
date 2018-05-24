@@ -4,27 +4,29 @@ import { Card, Icon, Image } from 'semantic-ui-react'
 
 export default class Product extends Component {
   render() {
+    const product = this.props.product;
+
     return (
       <>
         <Card>
-          <Image src='gadget.jpg' />
+          <Image src={product.images[0]} />
           <Card.Content>
             <Card.Header>
-              Camera
+              {product.name}
             </Card.Header>
             <Card.Meta>
               <span className='date'>
-                Canon S763
+                {product.category}
               </span>
             </Card.Meta>
             <Card.Description>
-              Case read they must it of cold that.
+              {product.description}
             </Card.Description>
           </Card.Content>
           <Card.Content extra>
             <a>
               <Icon name='print' />
-              799$
+                {product.price}
             </a>
           </Card.Content>
         </Card>

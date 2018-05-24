@@ -5,11 +5,12 @@ import { Container, Grid, Segment } from 'semantic-ui-react'
 import NavBar from './navbar/NavBar'
 import Filters from './sidebar/Filters'
 import Core from './core/Core'
+import AddProduct from './core/AddProduct'
 
-export default class componentName extends Component {
+export default class ShopApp extends Component {
   render() {
     return (
-      <>
+      <div>
         <Grid container stackable>
           <Grid.Row>
             <NavBar />
@@ -21,12 +22,13 @@ export default class componentName extends Component {
             </Grid.Column>
             <Grid.Column width={13}>
               <Segment>
-                <Core />
+                {/*<Core /> */}
+                <AddProduct />
               </Segment>
             </Grid.Column>
           </Grid.Row>
         </Grid>
-      </>
+      </div>
     )
   }
 }
