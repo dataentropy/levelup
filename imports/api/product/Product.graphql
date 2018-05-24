@@ -1,0 +1,16 @@
+type Product {
+  _id: String
+  name: String!
+  description: String
+  price: Float!
+  category: String
+  images: [String]
+}
+
+extend type Query {
+    products: [Product]
+}
+
+extend type Mutation {
+    addProduct(name: String!, description: String, price: Float!, category: String, images: [String]): Product
+}
